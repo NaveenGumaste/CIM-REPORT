@@ -1,0 +1,469 @@
+\documentclass[12 pt]{report}
+\usepackage[margin=1in, paperwidth=8.3in, paperheight=11.7in]{geometry}
+\usepackage[colorlinks]{hyperref}
+
+\usepackage{pgf}
+\usepackage{pgfpages}
+\usepackage{ragged2e}
+\bibliographystyle{plain}
+\pgfpagesdeclarelayout{boxed}
+{
+  \edef\pgfpageoptionborder{0pt}
+}
+{
+  \pgfpagesphysicalpageoptions
+  {
+    logical pages=1,
+  }
+  \pgfpageslogicalpageoptions{1}
+  {
+    border code=\pgfsetlinewidth{3pt}\pgfstroke,
+    border shrink=\pgfpageoptionborder,
+    resized width=0.9\pgfphysicalwidth,
+    resized height=0.9\pgfphysicalheight,
+    center=\pgfpoint{0.5\pgfphysicalwidth}{.5\pgfphysicalheight}
+  }
+}
+\pgfpagesuselayout{boxed}
+
+\usepackage{graphicx}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, 
+    linktoc=all,     
+    linkcolor=black, 
+    citecolor=black,
+}
+
+\begin{document}
+
+\begin{center}
+  \includegraphics[width=6.3in]{BVB.png}
+\end{center}
+
+
+\begin{center}
+  \begin{Large}
+    \textbf{\linebreak School of
+      \linebreak Electronics and Communication Engineering }
+  \end{Large}
+\end{center}
+
+\begin{center}
+  \begin{Large}
+    \textbf{\linebreak \linebreak  Mini Project Report \vspace{0.5cm}\\on}
+  \end{Large}
+\end{center}
+
+\begin{center}
+  \begin{LARGE}
+    \textbf{{Traffic Light Detection in Diverse Weather Conditions Using Machine Learning  \linebreak\\}}
+  \end{LARGE}
+\end{center}
+\vspace{2cm}
+\begin{flushleft}
+  \textbf{By:}
+  \begin{large}
+    \begin{enumerate}
+      \item \textbf{Naveenkumar Gumaste}      \hspace{2.2cm}USN:01FE22BEC407
+      \item \textbf{Chandan C Raikar}         \hspace{3.45cm}USN:01FE21BEC038
+      \item \textbf{Divya R Salmani}          \hspace{3.9cm}USN:01FE21BEC013
+      \item \textbf{Sanjana Adagimath }       \hspace{3.1cm}USN:01FE21BEC363
+    \end{enumerate}
+    \vspace{1cm}
+  \end{large}
+  \begin{Large}
+    \textbf{Semester: V, 2023-2024}
+  \end{Large}
+\end{flushleft}
+
+\begin{flushright}
+  \begin{Large}
+    Under the Guidance of \linebreak \\
+    \textbf{Rajeshwari K}
+  \end{Large}
+\end{flushright}
+
+\newpage
+\begin{center}
+  {\color{brown} \textbf{K.L.E SOCIETY'S\\
+      \begin{small}KLE Technological University,\\
+      \end{small}
+      HUBBALLI-580031\\}}
+  \begin{large}
+    {\color {brown} \textbf{2022-2023 \linebreak}}
+
+    \includegraphics[width=1in]{certkle.png}
+    \ \\
+    \ \ \ \\
+    SCHOOL OF ELECTRONICS AND COMMUNICATION ENGINEERING \linebreak
+  \end{large}
+
+  \begin{Large}
+    {\color {violet} \textbf{CERTIFICATE}} \linebreak
+  \end{Large}
+  \begin{center}
+    \justify{This is to certify that project entitled \textbf{“Traffic Light Detection in Diverse Weather Conditions Using Machine Learning”} is a bonafide work carried out by the student team of "\textbf{Naveenkumar Gumaste(01FE22BEC407)}, \textbf{Chandan C Raikar\linebreak(01FE21BEC038)}, \textbf{Divya R Salmani (01FE21BEC013)}, \textbf{Sanjana Adagimath (01FE21BEC363)}" . The project report has been approved as it satisfies the requirements with respect to the mini project work prescribed by the university curriculum for BE (V Semester) in School of Electronics and Communication Engineering of KLE Technological University for the academic year 2023-2024.}
+  \end{center}
+
+\end{center}
+
+\vspace{2cm}
+\begin{small} \textbf{Rajeshwari K} \hspace{2cm} \textbf{ Suneeta V Budihal} \hspace{2.8cm} \textbf{ B. S. Anami} \linebreak
+\end{small}
+\vspace{1cm}
+%\begin{large}
+\hspace{1cm} \small{\textbf{Guide} \hspace{4cm} \textbf{Head of School} \hspace{4cm}  \textbf{Registrar}}
+%\end{large}
+
+
+\vspace{0.8cm}
+
+\begin{flushleft}
+  \textbf{External Viva: \\}
+\end{flushleft}
+\textbf{Name of Examiners} \hspace{8cm} \textbf{Signature with date}
+\begin{enumerate}
+  \item
+  \item
+\end{enumerate}
+
+\newpage
+\begin{center}
+  \begin{Large}
+    \textbf{ACKNOWLEDGMENT}
+  \end{Large}
+\end{center}
+We are grateful to Prof. Rajeshwari K. for their help and guidance while working on our
+Cim Mini Project. We are especially grateful to Dr. Suneeta V.B., our head of school,
+Dr. Ashok Shettar, Vice-Chancellor of KLE Technological University, Hubballi, and Dr.
+P. G. Tewari, Dean Academics of KLE Technological University, for giving us this chance
+to do our research and for their support during the project. We thank all of our teaching
+and non-teaching staff for their help and encouragement.
+
+\flushright
+-The project team
+\flushleft
+
+
+\newpage
+\begin{center}
+  \begin{Large}
+    \textbf{ABSTRACT}
+  \end{Large}
+\end{center}
+This project presents a current exploration into the critical realm of traffic light detection within intelligent transportation systems (ITS), which is crucial for enhancing road safety and traffic management. Motivated by the continuous evolution of methodologies, our research provides a comprehensive analysis of detection techniques. From traditional computer vision to deep learning integration, we scrutinize strengths, limitations, and potential future directions. The study is conducted using datasets from ROBOFLOW UNIVERSE, demonstrating novelty in the approach. Ongoing advancements in detection strategies are crucial for improving road safety and traffic efficiency, establishing this research's significance within the evolving landscape of intelligent transportation systems.
+\flushright
+
+\newpage
+\tableofcontents
+
+\flushleft
+\newpage
+\chapter{Introduction}
+In the Smart Transportation Systems (STS) domain, the efficiency of traffic light detection is integral to advancing road safety and optimizing traffic flow. The burgeoning growth of urban environments amplifies the demand for sophisticated systems capable of managing intricate traffic networks. This project responds to this imperative by concentrating on elevating the precision and efficiency of traffic light detection, specifically addressing challenges posed by urban mobility. The methodology employed involves a thorough examination of detection approaches, spanning from traditional computer vision to cutting-edge deep learning. This comprehensive analysis delves into the strengths, limitations, and applications of Intelligent Transportation Systems (ITS). By leveraging datasets from ROBOFLOW UNIVERSE, the project ensures its relevance in real-world scenarios. The integration of traditional computer vision with deep learning not only contributes valuable insights but also positions the project to make meaningful contributions within the dynamic field of ITS.
+\flushleft
+\section{Motivation}
+Improving the precision and efficiency of traffic light detection within Smart Transportation Systems (STS) is pivotal for enhancing road safety in increasingly complex urban environments. As urban areas expand, the demand for advanced systems to manage intricate traffic networks grows, compelling this project to focus on optimizing traffic flow through enhanced traffic light detection. The motivation stems from addressing urban mobility challenges, prompting a thorough review of detection approaches, and leveraging datasets from ROBOFLOW UNIVERSE to develop solutions relevant to real-world scenarios. The integration of traditional computer vision with cutting-edge deep learning technologies adds a novel dimension, offering valuable insights and advancing traffic light detection methodologies within the dynamic realm of Intelligent Transportation Systems (ITS). In essence, this project is driven by the overarching goals of fostering road safety, optimizing traffic flow, addressing urban mobility challenges, and integrating innovative technologies to contribute meaningfully to the evolution of ITS.
+\flushleft
+\section{Objectives}
+
+\begin{itemize}
+  \item \textbf{Precision in Detection:} Formulating algorithms that exhibit high precision in detecting the presence of traffic lights within captured images, aiming to significantly enhance road safety and traffic flow optimization.
+
+  \item \textbf{Advanced Image Processing:} Developing sophisticated algorithms for extracting relevant features from input images. The system must demonstrate robustness in handling variations such as occlusions, distortions, and changes in perspective, ensuring accurate and reliable traffic light detection.
+
+  \item \textbf{Intelligent Classification:} Implementation of classification algorithms to intelligently recognize the specific type and significance of each detected traffic light. This step is crucial for providing nuanced insights into the traffic signal status and facilitating effective decision-making in Intelligent Transportation Systems (ITS).
+
+  \item \textbf{Robust Adaptability:} Ensuring the system's robustness and adaptability to diverse environmental conditions, encompassing different lighting scenarios, weather variations, and changes in the appearance of traffic lights. The objective is to create a system that performs reliably in real-world settings.
+\end{itemize}.
+
+
+\section{Literature survey}
+ {
+  \hspace*{1cm}{\bfseries Mark P Philipsen}, proposed the learning-based detector outperformed heuristic model-based detectors, exhibiting superior precision and recall—a critical parameter due to the irrevocable loss of false negatives. Emphasizing the significance of the learning-based detector’s heightened recall, the study primarily assessed its success in detecting traffic lights. Proposed enhancements involved incorporating tracking methods to refine its output. The overall system performance was evaluated through precision-recall curves and the Area Under the Curve (AUC), providing a comprehensive analysis of the effectiveness of the implemented learning-based detector and associated methodologies.
+
+  \hspace*{1cm}{\bfseries Trung-Hieu Nguyen’s}, proposed real-time traffic sign recognition model integrated into a 1:7 RC vehicle, demonstrated remarkable effectiveness and robustness in challenging scenarios. The system exhibited an impressive average accuracy of 99.78 percent in detecting traffic signs on the embedded platform. Despite its success, limitations were identified, including the impracticality of many existing systems in real-time environments, the computational weight of deep learning methods on embedded systems, consideration of only five common traffic signs, and a response time of 22 to 23 frames per second. The study advocates for further system expansion and methodology refinement, emphasizing a lightweight model, optimal recognition methods, and image processing techniques for training data.
+
+  \hspace*{1cm}{\bfseries Noor Hussain Sarhan’s} study, the primary focus was on evaluating and comparing two traffic light detection models, emphasizing their accuracy in classifying images and video frames. The findings centered on the precision of traffic light detection in both static images and video frames. Identified limitations included the necessity for further research to amalgamate the strengths of the two models and the call for future investigations employing deep learning algorithms and an expanded dataset. The methodology consisted of developing two distinct models utilizing the OpenCV library for image and video processing, with the YOLO detection system fine-tuning the video model’s weights and employing predefined color ranges for traffic light detection in images.
+
+  \hspace*{1cm}{\bfseries  Amara Dinesh’s}, research highlights the success of capsule networks, achieving a state-of-the-art accuracy of 97.6 percent on the German traffic sign dataset. Capsule networks are superior to CNNs in the challenging task of traffic sign detection, excelling in recognizing pose and spatial variances. This enhances reliability and accuracy in image classification,even for blurred, rotated, and distorted images. The study evaluates the algorithm’s performance in different orientations, emphasizing its proficiency in correctly identifying traffic signs. Limitations include inherent CNN limitations, the need for manual feature engineering, an unbalanced test set, and relatively lengthy training times. Methodologically, capsuleFig. 1. Functional Block Diagram networks are employed with specific layers, a route-by-agreement algorithm, and a decoder network.
+ }
+
+\section{Problem statement}
+Traffic Light Detection in Diverse Weather Conditions Using Machine Learning.
+\section{Organization of the report}
+Commencing with an introduction to the project in Chapter 1, the report systematically delves into various aspects of the endeavor.
+
+Chapter 2 comprehensively addresses the intricacies of system design, providing a detailed exploration of its architecture and components.
+
+Moving forward, Chapter 3 meticulously covers the planning and implementation aspects of the design, shedding light on the strategic decisions made during the development process.
+
+In Chapter 4, the focus shifts to the presentation and analysis of results, accompanied by in-depth discussions to elucidate the findings. Finally, Chapter 5 encapsulates the report with a conclusive summary, offering insights into the project's outcomes, and implications, and laying the groundwork for future exploration and development in the identified scope. This organized structure ensures a coherent and comprehensive narrative, guiding readers through the project's inception, design, implementation, outcomes, and future possibilities.
+
+\newpage
+\chapter{System design}
+In this Chapter, We will explore the internal architecture of YOLOv8, unraveling its intricate design principles and state-of-the-art advancements. Subsequently, our project's block diagram will illustrate the precise implementation details, showcasing the seamless integration of YOLOv8's cutting-edge features into our project.
+
+\section{Functional Block Diagram}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth]{Fun-Diagram.png}
+  \caption{Shows Functional Block Diagram}
+  \label{fig:function_block_diagram}
+\end{figure}
+\subsection{Functional Block Diagram Explanation}
+{
+\begin{itemize}
+  \item \textbf{Input:} Receives video frames or still images, potentially in various formats (e.g., RGB, grayscale) and resolutions.
+  
+  \item \textbf{Preprocessing:} Applies data normalization, and filtering (e.g., Gaussian blur) to mitigate noise and enhance relevant features. May involve color space conversion (e.g., RGB to HSV) for robust traffic light representation.
+  
+  \item \textbf{Region of Interest (ROI) Detection:} Employs object detection algorithms (e.g., YOLOv8) to localize traffic light bounding boxes within the frame. Can incorporate anchor boxes of varying sizes and aspect ratios to handle diverse traffic light positions and appearances.
+  
+  \item \textbf{Traffic Light Classification:} Leverages deep convolutional neural networks (CNNs) trained on labeled datasets of traffic light images. CNN architecture likely features convolutional layers for feature extraction, followed by pooling layers for spatial down-sampling and fully-connected layers for classification into red, yellow, or green states.
+\end{itemize}
+}
+
+\section{Yolov8 Architectural Diagram}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.65\textwidth]{Yolov8_Arch.png}%\href{https://blog.roboflow.com/whats-new-in-yolov8/}{[1]}
+  \caption{Shows YoloV8 Architectural Diagram}
+  \label{fig:function_block_diagram}
+\end{figure}
+\subsection{Yolov8 Architectural Diagram Explanation}
+{
+  \begin{itemize}
+    \item \textbf{Backbone:} This is the part of the model that extracts features from the input image. It consists of a series of convolutional layers that progressively reduce the size of the image while increasing the number of channels. The specific architecture of the backbone can vary depending on the model variant, but it is typically based on a ResNet or CSPDarknet architecture.
+
+    \item \textbf{Neck:} This part of the model processes the features extracted by the backbone to prepare them for the detection head. It typically consists of a spatial pyramid pooling (SPP) layer, which aggregates features from different spatial scales, and a few convolutional layers.
+
+    \item \textbf{Head:} This part of the model is responsible for making the final predictions. It consists of a series of convolutional layers that predict the bounding boxes, class probabilities, and confidence scores for the objects in the image.
+
+    \item \textbf{C2f module:} This is a new addition to the YOLOv8 architecture that helps to improve the accuracy of the model. It takes features from the backbone and the neck and combines them to create a more informative representation of the image.
+
+    \item \textbf{Decoupled head:} This is another new addition to the YOLOv8 architecture that helps to improve the speed of the model. It eliminates the need for a separate objectness branch, which can be computationally expensive.
+\end{itemize}
+}
+%\section{Morphological chart}
+%Additional information on how to write tables is as shown in \ref{tab:1}
+
+%\begin{table} [h]
+%\begin{center}
+%\caption{Morphological chart}
+%\label{tab:1}
+%\begin{tabular}{|c|c|c|c|} \hline
+%
+%\textbf{Functions/Means} & \textbf{Option 1} & \textbf{Option 2} & \textbf{Option 3} \\ \hline
+%1 & 2 & \multicolumn{2}{|c|}{Column merge} \\ \hline
+%Row merge & 5 & 6 & 7 \\ \cline{2-4}
+% & 8 & 9 & 10 \\ \hline
+%\end{tabular}
+%
+%\end{center}
+%\end{table} 
+
+%\section{Design alternatives}
+
+
+%\newpage
+%\section{Final design}
+%We select one of the optimal solutions based on its working and ease of implementation.\\
+
+\newpage
+\chapter{Implementation details}
+In this chapter, We will dive into the technical intricacies of establishing a robust environment tailored for training a YOLOv8 model. This involves configuring essential dependencies, preparing the dataset meticulously, and executing the training and testing process for the model.
+\section{Environment Setup}
+{
+  \begin{enumerate}
+    \item \textbf{ Operating system library for interacting with the OS:} 
+    \begin{center}
+        \includegraphics[width=17cm, height=1cm]{import Os.png}
+    \end{center}
+
+  \item \textbf{using it for file path expansion:}
+  \begin{center}
+      \includegraphics[width=17cm, height=1cm]{Import global.png}
+  \end{center}
+
+  \item \textbf{Displaying images in IPython environment:}
+  \begin{center}
+      \includegraphics[width=17cm, height=0.8cm]{Form Iphoton.display.png}
+  \end{center}
+
+  \item \textbf{ It displays detailed information about each GPU on the system, such as its name, model, temperature, utilization, memory usage, and more:}
+  \begin{center}
+      \includegraphics[width=17cm, height=1cm]{nvidia-smi.png}
+  \end{center}
+
+  \item \textbf{Installing and updating the Ultralytics library:}
+  \begin{center}
+      \includegraphics[width=17cm, height=1cm]{ipi install ultalatics.png}
+  \end{center}
+
+
+  \item \textbf{Importing Ultralytics into the project:}
+  \begin{center}
+      \includegraphics[width=17cm, height=1cm]{import ultralatics.png}
+  \end{center}
+
+  \item \textbf{Checking if the Ultralytics is correctly setup:}
+  \begin{center}
+      \includegraphics[width=17cm, height=1cm]{check ultralatics.png}
+  \end{center}
+
+  \item \textbf{Setting Constants, Creating Directories and Changing Directory :}
+  \begin{center}
+      \includegraphics[width=17cm, height=2cm]{creating home and dataset folder.png}
+  \end{center}
+\end{enumerate}
+}
+
+\section{Setting up YoloV8, Dataset, Training YoloV8s model and getting the results}
+{
+  \begin{enumerate}
+    \item \textbf{Installing the Roboflow library with the dataset using its unique api-key:}
+    \begin{center}
+        \includegraphics[width=17cm, height=2.5cm]{Pip insall roboflow.png}
+    \end{center}
+\subsection{Setting up YoloV8, Training YoloV8s model}
+    \item \textbf{Training the YOLOv8 model with specified parameters of 125 epochs with an image size of 1000 pixels and a batch size of 32:} 
+    \begin{center}
+        \includegraphics[width=17cm, height=1.5cm]{Training Yolov8model.png}
+    \end{center}
+    \item \textbf{Listing Detected Objects/files:}
+    \begin{center}
+        \includegraphics[width=17cm, height=1cm]{Listing out the files created after trining .png}
+    \end{center}
+
+    \vspace{1.34cm}
+  \subsection{Visualizing the Results and Analyzing}
+    \item \textbf{Displaying confusion matrix using "Image" command imported from IPython.display:}
+    \begin{center}
+        \includegraphics[width=17cm, height=1cm]{displaying the confusion matrix in environment.png}
+    \end{center}
+
+    \item \textbf{Validating the model in validation mode using a trained model:}
+    \begin{center}
+        \includegraphics[width=17cm, height=1cm]{validating the yolomodel on the dataset.png}
+    \end{center}
+
+    \item \textbf{Predicting on an "Image" in prediction mode on a single image file:}
+    \begin{center}
+        \includegraphics[width=17cm, height=1cm]{Testing the model on real-world img.png}
+    \end{center}
+
+    \item \textbf{Predicting on a "Video" in prediction mode on single video file:}
+    \begin{center}
+        \includegraphics[width=17cm, height=1cm]{Testing the model on real-world video.png}
+    \end{center}
+
+  \end{enumerate}
+}
+
+%\newpage
+%\chapter{Optimization}
+%\section{Introduction to optimization}
+%\section{Types of Optimization}
+%\section{Selection and justification of optimization method}
+\newpage
+\chapter{Results}
+{
+In this chapter, we will delve into a comprehensive exploration of the results and project outcomes achieved through the implementation of YOLOv8. This entails an in-depth analysis of the results obtained.
+}
+\section{Result Visualizing}
+{
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.65\textwidth]{Results Collgess.jpg}
+  \caption{Shows Results of YoloV8 implementation for our real-world sample images}
+  \label{fig:Results achieved from YoloV8s Implementation}
+\end{figure}
+\hspace*{1cm} The fig 4.2 shows a few sample results of our YoloV8 implementation on our own images other than the dataset images. The results are quite good, and they can be used in real-world applications.
+\newpage
+\subsection{Result Analysis}
+{
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{confusion_matrix_normalized.png}
+    \caption{Shows Confusion Matrix Of YoloV8s Trained Model}
+    \label{fig:Confusion Matrix YoloV8 Trained Model}
+  \end{figure}
+
+  \hspace*{1cm} fig 4.3 shows the confusion matrix of our YoloV8 trained model which is trained on our own custom dataset. The confusion matrix shows the accuracy of our model, which averages at 96 percent most of the time.
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Comaprison Results.png}
+    \caption{Shows Result Comparison Of Epochs For Which The Model as trained}
+    \label{fig: YoloV8 implementation}
+  \end{figure}
+
+  \hspace*{1cm} As shoun in fig 4.3 the study showcased significant improvements in Mean Average Precision (MAP) scores across training epochs. Starting at a MAP score of 0.345 after 50 epochs, the detection accuracy steadily increased, reaching 0.962 at 125 epochs. This trajectory underscores the efficacy of our methodology in advancing traffic light detection accuracy, emphasizing the ongoing importance of evolving detection strategies for optimizing safety and traffic efficiency in the dynamic landscape of ITS(Intelligent Transportation Systems).
+}
+}
+
+
+
+\newpage
+\chapter{Conclusions and future scope}
+\section{Conclusion}
+{
+\hspace*{1cm} In conclusion, our comprehensive exploration and the achieved results underscore the potential of combining traditional and deep learning techniques for robust traffic light detection. This work contributes to the broader field of ITS by providing insights into enhancing the accuracy of detection systems, ultimately contributing to safer and more efficient transportation systems.
+}
+
+
+\section{Future scope}
+\begin{itemize}
+  \item \textbf{Enhanced Dataset Diversity:}
+        Recommending the utilization of a more diverse dataset with increased variability in environmental conditions, lighting, and traffic scenarios to improve the robustness and generalization of the traffic light detection model.
+
+  \item \textbf{Detailed Annotation and Bounding Boxes:}
+        Emphasizes the importance of meticulous annotation and precise bounding boxes in the dataset to provide a richer ground truth for training, ensuring the model's accuracy in identifying and localizing traffic lights under various circumstances.
+
+  \item \textbf{High-Quality Hardware Implementation:}
+        Suggesting the adoption of advanced hardware configurations, possibly leveraging GPUs or TPUs, to expedite model training and inference processes. This can lead to enhanced efficiency and real-time performance, especially in scenarios with increased computational demands.
+
+  \item \textbf{Integration of Advanced Learning Techniques:}
+        Exploring the incorporation of state-of-the-art deep learning techniques, such as transfer learning or ensemble methods, to further enhance the model's ability to generalize across diverse traffic light scenarios and potentially improve its performance on challenging instances.
+
+  \item \textbf{Continuous Model Refinement:}
+        Encouraging an iterative approach to model refinement through continuous experimentation with hyperparameter tuning, architecture modifications, and advanced training strategies. This approach ensures the adaptability of the traffic light detection model to evolving real-world conditions and challenges.
+\end{itemize}
+
+%\subsection{Application in the societal context}
+
+\addcontentsline{toc}{chapter}{References}
+\newpage
+\section*{References}
+
+\begin{enumerate}
+    \item \textbf{Mark Philip Philipsen,} "Traffic Light Detection: A Learning Algorithm and Evaluations on Challenging Dataset", 2015 IEEE 18th International Conference on Intelligent Transportation Systems.
+    \href{https://doi.org/10.1109/ITSC.2015.378}{[1]}
+
+    \item \textbf{Trung-Hieu Nguyen,} "A Lightweight Model For Real-time Traffic Sign Recognition", 2020 5th International Conference on Green Technology and Sustainable Development (GTSD).
+    \href{https://doi.org/10.1109/GTSD50082.2020.9303072}{[2]}
+
+    \item \textbf{Noor Hussain Sarhan,} "Traffic light Detection using OpenCV and YOLO", 2022 International Conference on Innovation and Intelligence for Informatics, Computing, and Technologies (3ICT).
+    \href{https://doi.org/10.1109/3ICT56508.2022.9990723}{[3]}
+
+    \item \textbf{Amara Dinesh Kumar,} "Novel Deep Learning Model for Traffic Sign Detection Using Capsule Networks," CoRR, vol. abs/1805.04424, 2018.
+    \href{https://doi.org/10.48550/arXiv.1805.04424}{[4]}
+
+    \item \textbf{Fatma Nur Ortataş,} "Performance Evaluation of YOLOv5, YOLOv7, and YOLOv8 Models in Traffic Sign Detection", 2023 8th International Conference on Computer Science and Engineering (UBMK).
+    \href{https://doi.org/10.1109/UBMK59864.2023.10286611}{[5]}
+
+    \item \textbf{Abdellah Nabou,} "Road Signs Recognition by Using YOLOv8 Model", 2023 14th International Conference on Intelligent Systems: Theories and Applications (SITA).
+    \href{https://ieeexplore.ieee.org/document/10373723}{[6]}
+
+    \item \textbf{Ultralytics,} "Ultralytics YOLOv8 Docs", https://docs.ultralytics.com/models/yolov8/.
+    \href{https://www.ros.org/}{[7]}
+
+\end{enumerate}
+
+\end{document}
+
+\addcontentsline{toc}{chapter}{Appendix}
+\end{document}
