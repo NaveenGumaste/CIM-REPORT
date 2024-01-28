@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.26)  27 JAN 2024 14:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.26)  28 JAN 2024 13:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -494,13 +494,13 @@ Chapter 2.
 <Fun-Diagram.png, id=190, 963.6pt x 542.025pt>
 File: Fun-Diagram.png Graphic file (type png)
 <use Fun-Diagram.png>
-Package pdftex.def Info: Fun-Diagram.png  used on input line 212.
+Package pdftex.def Info: Fun-Diagram.png  used on input line 207.
 (pdftex.def)             Requested size: 387.00882pt x 217.6911pt.
 [9]
 <Yolov8_Arch.png, id=195, 1003.75pt x 1050.92625pt>
 File: Yolov8_Arch.png Graphic file (type png)
 <use Yolov8_Arch.png>
-Package pdftex.def Info: Yolov8_Arch.png  used on input line 232.
+Package pdftex.def Info: Yolov8_Arch.png  used on input line 227.
 (pdftex.def)             Requested size: 295.94302pt x 309.8602pt.
  [10
 
@@ -509,60 +509,60 @@ Chapter 3.
 <import Os.png, id=207, 590.95781pt x 27.85406pt>
 File: import Os.png Graphic file (type png)
 <use import Os.png>
-Package pdftex.def Info: import Os.png  used on input line 283.
+Package pdftex.def Info: import Os.png  used on input line 278.
 (pdftex.def)             Requested size: 483.70485pt x 28.45282pt.
 
-Overfull \hbox (57.7783pt too wide) in paragraph at lines 283--284
+Overfull \hbox (57.7783pt too wide) in paragraph at lines 278--279
  [] 
  []
 
 <Import global.png, id=209, 650.43pt x 27.10126pt>
 File: Import global.png Graphic file (type png)
 <use Import global.png>
-Package pdftex.def Info: Import global.png  used on input line 288.
+Package pdftex.def Info: Import global.png  used on input line 283.
 (pdftex.def)             Requested size: 483.71245pt x 28.45425pt.
 
-Overfull \hbox (57.7859pt too wide) in paragraph at lines 288--289
+Overfull \hbox (57.7859pt too wide) in paragraph at lines 283--284
  [] 
  []
 
 <Form Iphoton.display.png, id=210, 651.93562pt x 24.84282pt>
 File: Form Iphoton.display.png Graphic file (type png)
 <use Form Iphoton.display.png>
-Package pdftex.def Info: Form Iphoton.display.png  used on input line 293.
+Package pdftex.def Info: Form Iphoton.display.png  used on input line 288.
 (pdftex.def)             Requested size: 483.70805pt x 22.76277pt.
 
-Overfull \hbox (57.78151pt too wide) in paragraph at lines 293--294
+Overfull \hbox (57.78151pt too wide) in paragraph at lines 288--289
  [] 
  []
 
 <nvidia-smi.png, id=211, 712.91344pt x 38.39343pt>
 File: nvidia-smi.png Graphic file (type png)
 <use nvidia-smi.png>
-Package pdftex.def Info: nvidia-smi.png  used on input line 298.
+Package pdftex.def Info: nvidia-smi.png  used on input line 293.
 (pdftex.def)             Requested size: 483.69778pt x 28.45287pt.
 
-Overfull \hbox (57.77124pt too wide) in paragraph at lines 298--299
+Overfull \hbox (57.77124pt too wide) in paragraph at lines 293--294
  [] 
  []
 
 <ipi install ultalatics.png, id=212, 776.14969pt x 30.86531pt>
 File: ipi install ultalatics.png Graphic file (type png)
 <use ipi install ultalatics.png>
-Package pdftex.def Info: ipi install ultalatics.png  used on input line 303.
+Package pdftex.def Info: ipi install ultalatics.png  used on input line 298.
 (pdftex.def)             Requested size: 483.70673pt x 28.45433pt.
 
-Overfull \hbox (57.78018pt too wide) in paragraph at lines 303--304
+Overfull \hbox (57.78018pt too wide) in paragraph at lines 298--299
  [] 
  []
 
 <import ultralatics.png, id=213, 674.52pt x 30.86531pt>
 File: import ultralatics.png Graphic file (type png)
 <use import ultralatics.png>
-Package pdftex.def Info: import ultralatics.png  used on input line 309.
+Package pdftex.def Info: import ultralatics.png  used on input line 304.
 (pdftex.def)             Requested size: 483.70879pt x 28.45433pt.
 
-Overfull \hbox (57.78224pt too wide) in paragraph at lines 309--310
+Overfull \hbox (57.78224pt too wide) in paragraph at lines 304--305
  [] 
  []
 
@@ -570,50 +570,50 @@ Overfull \hbox (57.78224pt too wide) in paragraph at lines 309--310
 <check ultralatics.png, id=218, 627.09282pt x 33.12375pt>
 File: check ultralatics.png Graphic file (type png)
 <use check ultralatics.png>
-Package pdftex.def Info: check ultralatics.png  used on input line 314.
+Package pdftex.def Info: check ultralatics.png  used on input line 309.
 (pdftex.def)             Requested size: 483.71458pt x 28.453pt.
 
-Overfull \hbox (57.78804pt too wide) in paragraph at lines 314--315
+Overfull \hbox (57.78804pt too wide) in paragraph at lines 309--310
  [] 
  []
 
 <creating home and dataset folder.png, id=219, 693.34032pt x 77.53969pt>
 File: creating home and dataset folder.png Graphic file (type png)
 <use creating home and dataset folder.png>
-Package pdftex.def Info: creating home and dataset folder.png  used on input line 319.
+Package pdftex.def Info: creating home and dataset folder.png  used on input line 314.
 (pdftex.def)             Requested size: 483.70567pt x 56.90518pt.
 
-Overfull \hbox (57.77913pt too wide) in paragraph at lines 319--320
+Overfull \hbox (57.77913pt too wide) in paragraph at lines 314--315
  [] 
  []
 
 <Pip insall roboflow.png, id=220, 856.70062pt x 110.66344pt>
 File: Pip insall roboflow.png Graphic file (type png)
 <use Pip insall roboflow.png>
-Package pdftex.def Info: Pip insall roboflow.png  used on input line 329.
+Package pdftex.def Info: Pip insall roboflow.png  used on input line 324.
 (pdftex.def)             Requested size: 483.69688pt x 71.13504pt.
 
-Overfull \hbox (57.77034pt too wide) in paragraph at lines 329--330
+Overfull \hbox (57.77034pt too wide) in paragraph at lines 324--325
  [] 
  []
 
 <Training Yolov8model.png, id=221, 770.88pt x 42.91031pt>
 File: Training Yolov8model.png Graphic file (type png)
 <use Training Yolov8model.png>
-Package pdftex.def Info: Training Yolov8model.png  used on input line 334.
+Package pdftex.def Info: Training Yolov8model.png  used on input line 329.
 (pdftex.def)             Requested size: 483.69261pt x 42.67905pt.
 
-Overfull \hbox (57.76607pt too wide) in paragraph at lines 334--335
+Overfull \hbox (57.76607pt too wide) in paragraph at lines 329--330
  [] 
  []
 
 <Listing out the files created after trining .png, id=222, 690.32906pt x 30.86531pt>
 File: Listing out the files created after trining .png Graphic file (type png)
 <use Listing out the files created after trining .png>
-Package pdftex.def Info: Listing out the files created after trining .png  used on input line 338.
+Package pdftex.def Info: Listing out the files created after trining .png  used on input line 333.
 (pdftex.def)             Requested size: 483.70107pt x 28.45433pt.
 
-Overfull \hbox (57.77452pt too wide) in paragraph at lines 338--339
+Overfull \hbox (57.77452pt too wide) in paragraph at lines 333--334
  [] 
  []
 
@@ -623,40 +623,40 @@ Overfull \hbox (57.77452pt too wide) in paragraph at lines 338--339
 <displaying the confusion matrix in environment.png, id=237, 657.2053pt x 27.10126pt>
 File: displaying the confusion matrix in environment.png Graphic file (type png)
 <use displaying the confusion matrix in environment.png>
-Package pdftex.def Info: displaying the confusion matrix in environment.png  used on input line 345.
+Package pdftex.def Info: displaying the confusion matrix in environment.png  used on input line 340.
 (pdftex.def)             Requested size: 483.70695pt x 28.45425pt.
 
-Overfull \hbox (57.78041pt too wide) in paragraph at lines 345--346
+Overfull \hbox (57.78041pt too wide) in paragraph at lines 340--341
  [] 
  []
 
 <validating the yolomodel on the dataset.png, id=238, 861.9703pt x 36.135pt>
 File: validating the yolomodel on the dataset.png Graphic file (type png)
 <use validating the yolomodel on the dataset.png>
-Package pdftex.def Info: validating the yolomodel on the dataset.png  used on input line 350.
+Package pdftex.def Info: validating the yolomodel on the dataset.png  used on input line 345.
 (pdftex.def)             Requested size: 483.71283pt x 28.45258pt.
 
-Overfull \hbox (57.78629pt too wide) in paragraph at lines 350--351
+Overfull \hbox (57.78629pt too wide) in paragraph at lines 345--346
  [] 
  []
 
 <Testing the model on real-world img.png, id=239, 878.53218pt x 44.41594pt>
 File: Testing the model on real-world img.png Graphic file (type png)
 <use Testing the model on real-world img.png>
-Package pdftex.def Info: Testing the model on real-world img.png  used on input line 355.
+Package pdftex.def Info: Testing the model on real-world img.png  used on input line 350.
 (pdftex.def)             Requested size: 483.7036pt x 28.4532pt.
 
-Overfull \hbox (57.77705pt too wide) in paragraph at lines 355--356
+Overfull \hbox (57.77705pt too wide) in paragraph at lines 350--351
  [] 
  []
 
 <Testing the model on real-world video.png, id=240, 833.36343pt x 45.92157pt>
 File: Testing the model on real-world video.png Graphic file (type png)
 <use Testing the model on real-world video.png>
-Package pdftex.def Info: Testing the model on real-world video.png  used on input line 360.
+Package pdftex.def Info: Testing the model on real-world video.png  used on input line 355.
 (pdftex.def)             Requested size: 483.69446pt x 28.45355pt.
 
-Overfull \hbox (57.76791pt too wide) in paragraph at lines 360--361
+Overfull \hbox (57.76791pt too wide) in paragraph at lines 355--356
  [] 
  []
 
@@ -665,18 +665,18 @@ Chapter 4.
 <Results Collgess.jpg, id=258, 1084.05pt x 1084.05pt>
 File: Results Collgess.jpg Graphic file (type jpg)
 <use Results Collgess.jpg>
-Package pdftex.def Info: Results Collgess.jpg  used on input line 380.
+Package pdftex.def Info: Results Collgess.jpg  used on input line 375.
 (pdftex.def)             Requested size: 295.94302pt x 295.9395pt.
 [15 <./displaying the confusion matrix in environment.png> <./validating the yolomodel on the dataset.png> <./Testing the model on real-world img.png> <./Testing the model on real-world video.png>]
 <confusion_matrix_normalized.png, id=271, 867.24pt x 650.43pt>
 File: confusion_matrix_normalized.png Graphic file (type png)
 <use confusion_matrix_normalized.png>
-Package pdftex.def Info: confusion_matrix_normalized.png  used on input line 390.
+Package pdftex.def Info: confusion_matrix_normalized.png  used on input line 385.
 (pdftex.def)             Requested size: 318.70947pt x 239.02766pt.
 <Comaprison Results.png, id=272, 963.6pt x 542.025pt>
 File: Comaprison Results.png Graphic file (type png)
 <use Comaprison Results.png>
-Package pdftex.def Info: Comaprison Results.png  used on input line 399.
+Package pdftex.def Info: Comaprison Results.png  used on input line 394.
 (pdftex.def)             Requested size: 227.65062pt x 128.0458pt.
  [16
 
@@ -705,7 +705,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  87i,6n,93p,1207b,604s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\navee\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/navee/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/navee/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/navee/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/navee/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/navee/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on MainFile.pdf (18 pages, 1500575 bytes).
+Output written on MainFile.pdf (18 pages, 1500683 bytes).
 PDF statistics:
  354 PDF objects out of 1000 (max. 8388607)
  76 named destinations out of 1000 (max. 500000)
