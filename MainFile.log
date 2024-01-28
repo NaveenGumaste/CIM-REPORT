@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.26)  28 JAN 2024 14:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.26)  28 JAN 2024 14:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -699,7 +699,7 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `MainFile.out' has not changed.
-(rerunfilecheck)             Checksum: 603810B00F56C0EB3D189BBACA30811A;3972.
+(rerunfilecheck)             Checksum: BB735EF72B6405B228C10BB05D2F3EDD;3977.
  ) 
 Here is how much of TeX's memory you used:
  17405 strings out of 474485
@@ -710,7 +710,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  87i,6n,93p,1207b,606s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\navee\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/navee/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/navee/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/navee/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/navee/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/navee/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on MainFile.pdf (18 pages, 1502188 bytes).
+Output written on MainFile.pdf (18 pages, 1502201 bytes).
 PDF statistics:
  352 PDF objects out of 1000 (max. 8388607)
  74 named destinations out of 1000 (max. 500000)

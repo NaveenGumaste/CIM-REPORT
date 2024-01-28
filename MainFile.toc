@@ -13,7 +13,7 @@
 \contentsline {section}{\numberline {3.1}Environment Setup}{13}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Setting up YoloV8, Dataset, Training YoloV8s model and getting the results}{14}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Setting up YoloV8, Training YoloV8s model}{14}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Visualizing the Results and Analyzing}{15}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Visualizing the Results In Environment}{15}{subsection.3.2.2}%
 \contentsline {chapter}{\numberline {4}Results}{16}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Result Visualizing}{16}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Result Analysis}{17}{subsection.4.1.1}%
