@@ -160,16 +160,16 @@ This project presents a current exploration into the critical realm of traffic l
 \newpage
 \chapter{Introduction}
 \justify
-In the Smart Transportation Systems (STS) domain, the efficiency of traffic light detection is integral to advancing road safety and optimizing traffic flow. The burgeoning growth of urban environments amplifies the demand for sophisticated systems capable of managing intricate traffic networks. This project responds to this imperative by concentrating on elevating the precision and efficiency of traffic light detection, specifically addressing challenges posed by urban mobility. The methodology employed involves a thorough examination of detection approaches, spanning from traditional computer vision to cutting-edge deep learning. This comprehensive analysis delves into the strengths, limitations, and applications of Intelligent Transportation Systems (ITS). By leveraging datasets from ROBOFLOW UNIVERSE, the project ensures its relevance in real-world scenarios. The integration of traditional computer vision with deep learning not only contributes valuable insights but also positions the project to make meaningful contributions within the dynamic field of ITS.
+In the Smart Transportation Systems (STS) domain, the efficiency of traffic light detection is integral to advancing road safety and optimizing traffic flow. The burgeoning growth of urban environments amplifies the demand for sophisticated systems capable of managing intricate traffic networks. This project responds to this imperative by concentrating on elevating the precision and efficiency of traffic light detection, specifically addressing challenges posed by urban mobility. The methodology employed involves a thorough examination of detection approaches, spanning from traditional computer vision to cutting-edge deep learning. This exhaustive analysis explores the strengths, limitations, and applications of Intelligent Transportation Systems (ITS). By leveraging datasets from ROBOFLOW UNIVERSE, the project ensures its relevance in real-world scenarios. Integrating traditional computer vision with deep learning not only contributes valuable insights but also positions the project to make meaningful contributions within the dynamic field of ITS.
 \flushleft
 \section{Motivation}
 \justify
-Improving the precision and efficiency of traffic light detection within Smart Transportation Systems (STS) is pivotal for enhancing road safety in increasingly complex urban environments. As urban areas expand, the demand for advanced systems to manage intricate traffic networks grows, compelling this project to focus on optimizing traffic flow through enhanced traffic light detection. The motivation stems from addressing urban mobility challenges, prompting a thorough review of detection approaches, and leveraging datasets from ROBOFLOW UNIVERSE to develop solutions relevant to real-world scenarios. The integration of traditional computer vision with cutting-edge deep learning technologies adds a novel dimension, offering valuable insights and advancing traffic light detection methodologies within the dynamic realm of Intelligent Transportation Systems (ITS). In essence, this project is driven by the overarching goals of fostering road safety, optimizing traffic flow, addressing urban mobility challenges, and integrating innovative technologies to contribute meaningfully to the evolution of ITS.
+Improving the precision and efficiency of traffic light detection within Smart Transportation Systems (STS) is pivotal for enhancing road safety in increasingly complex urban environments. As urban areas expand, the demand for advanced systems to manage intricate traffic networks grows, compelling this project to focus on optimizing traffic flow through enhanced traffic light detection. The motivation stems from addressing urban mobility challenges, prompting a thorough review of detection approaches, and leveraging datasets from ROBOFLOW UNIVERSE to develop solutions relevant to real-world scenarios. Integrating traditional computer vision with cutting-edge deep learning technologies adds a novel dimension, offering valuable insights and advancing traffic light detection methodologies within the dynamic realm of Intelligent Transportation Systems (ITS). In essence, this project is driven by the overarching goals of fostering road safety, optimizing traffic flow, addressing urban mobility challenges, and integrating innovative technologies to contribute meaningfully to the evolution of ITS.
 \flushleft
 \section{Objectives}
 \begin{justify}
 \begin{itemize}
-  \item \textbf{Precision in Detection:} Formulating algorithms that exhibit high precision in detecting the presence of traffic lights within captured images, aiming to significantly enhance road safety and traffic flow optimization.
+  \item \textbf{Precision in Detection:} Formulating algorithms that exhibit high precision in detecting the presence of traffic lights within captured images, aiming to enhance road safety and traffic flow optimization significantly.
 
   \item \textbf{Advanced Image Processing:} Developing sophisticated algorithms for extracting relevant features from input images. The system must demonstrate robustness in handling variations such as occlusions, distortions, and changes in perspective, ensuring accurate and reliable traffic light detection.
 
@@ -188,22 +188,19 @@ Improving the precision and efficiency of traffic light detection within Smart T
 
   \hspace*{1cm}{\bfseries Noor Hussain Sarhan’s} study, the primary focus was on evaluating and comparing two traffic light detection models, emphasizing their accuracy in classifying images and video frames. The findings centered on the precision of traffic light detection in both static images and video frames. Identified limitations included the necessity for further research to amalgamate the strengths of the two models and the call for future investigations employing deep learning algorithms and an expanded dataset. The methodology consisted of developing two distinct models utilizing the OpenCV library for image and video processing, with the YOLO detection system fine-tuning the video model’s weights and employing predefined color ranges for traffic light detection in images.
 
-  \hspace*{1cm}{\bfseries  Amara Dinesh’s}, research highlights the success of capsule networks, achieving a state-of-the-art accuracy of 97.6 percent on the German traffic sign dataset. Capsule networks are superior to CNNs in the challenging task of traffic sign detection, excelling in recognizing pose and spatial variances. This enhances reliability and accuracy in image classification,even for blurred, rotated, and distorted images. The study evaluates the algorithm’s performance in different orientations, emphasizing its proficiency in correctly identifying traffic signs. Limitations include inherent CNN limitations, the need for manual feature engineering, an unbalanced test set, and relatively lengthy training times. Methodologically, capsuleFig. 1. Functional Block Diagram networks are employed with specific layers, a route-by-agreement algorithm, and a decoder network.
+  \hspace*{1cm}{\bfseries  Amara Dinesh’s}, research highlights the success of capsule networks, achieving a state-of-the-art accuracy of 97.6 percent on the German traffic sign dataset. Capsule networks are superior to CNNs in the challenging task of traffic sign detection, excelling in recognizing pose and spatial variances. This enhances reliability and accuracy in image classification, even for blurred, rotated, and distorted images. The study evaluates the algorithm’s performance in different orientations, emphasizing its proficiency in correctly identifying traffic signs. Limitations include inherent CNN limitations, the need for manual feature engineering, an unbalanced test set, and relatively lengthy training times. Methodologically, capsuleFig. 1. Functional Block Diagram networks are employed with specific layers, a route-by-agreement algorithm, and a decoder network.
  }
 
 \section{Problem statement}
 Traffic Light Detection in Diverse Weather Conditions Using Machine Learning.
 \section{Organization of the report}
 \justify
-Commencing with an introduction to the project in Chapter 1, the report systematically delves into various aspects of the endeavor.
-Chapter 2 comprehensively addresses the intricacies of system design, providing a detailed exploration of its architecture and components.
-Moving forward, Chapter 3 meticulously covers the planning and implementation aspects of the design, shedding light on the strategic decisions made during the development process.
-In Chapter 4, the focus shifts to the presentation and analysis of results, accompanied by in-depth discussions to elucidate the findings. Finally, Chapter 5 encapsulates the report with a conclusive summary, offering insights into the project's outcomes, and implications, and laying the groundwork for future exploration and development in the identified scope. This organized structure ensures a coherent and comprehensive narrative, guiding readers through the project's inception, design, implementation, outcomes, and future possibilities.
+Initiating with an introduction in Chapter 1, the project systematically explores various facets of the project. Chapter 2 extensively examines the complexities of system design, providing an in-depth overview of its structure and components. Progressing further, Chapter 3 thoroughly covers the planning and execution aspects of the design, illuminating strategic decisions made during development. Chapter 4 shifts focus to presenting and analyzing results, with detailed discussions to clarify findings. Finally, Chapter 5 concludes the report with a summary, offering insights into project outcomes, and implications, and paving the way for future exploration and development in the identified scope. This structured approach ensures a cohesive and comprehensive narrative, guiding readers through the project's initiation, design, execution, results, and future prospects.
 
 \newpage
 \chapter{System design}
 \justify
-In this Chapter, We will explore the internal architecture of YOLOv8, unraveling its intricate design principles and state-of-the-art advancements. Subsequently, our project's block diagram will illustrate the precise implementation details, showcasing the seamless integration of YOLOv8's cutting-edge features into our project.
+In this Chapter, We will analyze YOLOv8's cutting-edge advancements and intricate design principles as we look into the system's inner workings. The block diagram for our project will show how YOLOv8's cutting-edge features were incorporated and how well our solution integrated them.
 
 \section{Functional Block Diagram}
 \begin{figure}[h]
@@ -216,7 +213,7 @@ In this Chapter, We will explore the internal architecture of YOLOv8, unraveling
 {
   \begin{justify}
   \begin{itemize}
-    \item \textbf{Input:} Receives video frames or still images, potentially in various formats (e.g., RGB, grayscale) and resolutions.
+    \item \textbf{Input:} Video frames or still images, maybe in different resolutions and formats (such as RGB or grayscale), are received.
 
     \item \textbf{Preprocessing:} Applies data normalization, and filtering (e.g., Gaussian blur) to mitigate noise and enhance relevant features. May involve color space conversion (e.g., RGB to HSV) for robust traffic light representation.
 
@@ -238,13 +235,14 @@ In this Chapter, We will explore the internal architecture of YOLOv8, unraveling
 {
   \begin{justify}
   \begin{itemize}
-    \item \textbf{Backbone:} This is the part of the model that extracts features from the input image. It consists of a series of convolutional layers that progressively reduce the size of the image while increasing the number of channels. The specific architecture of the backbone can vary depending on the model variant, but it is typically based on a ResNet or CSPDarknet architecture.
+    \item \textbf{Backbone:} The model's component that pulls features from the input image is this one. It is composed of several convolutional layers that increase the number of channels and gradually shrink the image's size. The backbone's architecture might differ based on the model version, however it usually uses a ResNet or CSPDarknet design.
+
 
     \item \textbf{Neck:} This part of the model processes the features extracted by the backbone to prepare them for the detection head. It typically consists of a spatial pyramid pooling (SPP) layer, which aggregates features from different spatial scales, and a few convolutional layers.
 
     \item \textbf{Head:} This part of the model is responsible for making the final predictions. It consists of a series of convolutional layers that predict the bounding boxes, class probabilities, and confidence scores for the objects in the image.
 
-    \item \textbf{C2f module:} This is a new addition to the YOLOv8 architecture that helps to improve the accuracy of the model. It takes features from the backbone and the neck and combines them to create a more informative representation of the image.
+    \item \textbf{C2f module:} This is a recent development of the YOLOv8 architecture that raises the model's accuracy. It mixes characteristics from the neck and backbone to produce a more illuminating depiction of the picture.
 
     \item \textbf{Decoupled head:} This is another new addition to the YOLOv8 architecture that helps to improve the speed of the model. It eliminates the need for a separate objectness branch, which can be computationally expensive.
   \end{itemize}
@@ -387,7 +385,7 @@ In this chapter, We will dive into the technical intricacies of establishing a r
     \label{fig:Results achieved from YoloV8s Implementation}
   \end{figure}
   \justify
-  \hspace*{1cm} The fig 4.2 shows a few sample results of our YoloV8 implementation on our own images other than the dataset images. The results are quite good, and they can be used in real-world applications.
+  \hspace*{1cm} fig 4.2 shows a few sample results of our YoloV8 implementation on our own images other than the dataset images. The results are quite good, and they can be used in real-world applications.
   \newpage
   \subsection{Result Analysis}
   {
@@ -408,7 +406,7 @@ In this chapter, We will dive into the technical intricacies of establishing a r
     \end{figure}
 
     \begin{justify}
-    \hspace*{1cm} As shoun in fig 4.3 the study showcased significant improvements in Mean Average Precision (MAP) scores across training epochs. Starting at a MAP score of 0.345 after 50 epochs, the detection accuracy steadily increased, reaching 0.962 at 125 epochs. This trajectory underscores the efficacy of our methodology in advancing traffic light detection accuracy, emphasizing the ongoing importance of evolving detection strategies for optimizing safety and traffic efficiency in the dynamic landscape of ITS(Intelligent Transportation Systems).
+    \hspace*{1cm} As shown in fig 4.3 the study showcased significant improvements in Mean Average Precision (MAP) scores across training epochs. Starting at a MAP score of 0.345 after 50 epochs, the detection accuracy steadily increased, reaching 0.962 at 125 epochs. This trajectory underscores the efficacy of our methodology in advancing traffic light detection accuracy, emphasizing the ongoing importance of evolving detection strategies for optimizing safety and traffic efficiency in the dynamic landscape of ITS(Intelligent Transportation Systems).
     \end{justify}
   }
  }
