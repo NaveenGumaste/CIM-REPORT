@@ -68,9 +68,9 @@
   \begin{large}
     \begin{enumerate}
       \item \textbf{Naveenkumar Gumaste}      \hspace{2.2cm}USN:01FE22BEC407
-      \item \textbf{Chandan C Raikar}         \hspace{3.45cm}USN:01FE21BEC038
-      \item \textbf{Divya R Salmani}          \hspace{3.9cm}USN:01FE21BEC013
-      \item \textbf{Sanjana Adagimath }       \hspace{3.1cm}USN:01FE21BEC363
+      \item \textbf{Chandan C Raikar}         \hspace{3.39cm}USN:01FE21BEC038
+      \item \textbf{Divya R Salmani}          \hspace{3.85cm}USN:01FE21BEC013
+      \item \textbf{Sanjana Adagimath }       \hspace{3.05cm}USN:01FE21BEC363
     \end{enumerate}
     \vspace{1cm}
   \end{large}
@@ -105,7 +105,7 @@
     {\color {violet} \textbf{CERTIFICATE}} \linebreak
   \end{Large}
   \begin{center}
-    \justify{This is to certify that project entitled \textbf{“Traffic Light Detection in Diverse Weather Conditions Using Machine Learning”} is a bonafide work carried out by the student team of "\textbf{Naveenkumar Gumaste(01FE22BEC407)}, \textbf{Chandan C Raikar\linebreak(01FE21BEC038)}, \textbf{Divya R Salmani (01FE21BEC013)}, \textbf{Sanjana Adagimath (01FE21BEC363)}" . The project report has been approved as it satisfies the requirements with respect to the mini project work prescribed by the university curriculum for BE (V Semester) in School of Electronics and Communication Engineering of KLE Technological University for the academic year 2023-2024.}
+    \justify{This is to certify that project entitled \textbf{“Traffic Light Detection in Diverse Weather Conditions Using Machine Learning”} is a bonafide work carried out by the student team of "\textbf{Naveenkumar Gumaste(01FE22BEC407)}, \textbf{Chandan C Raikar\linebreak(01FE21BEC038)}, \textbf{Divya R Salmani (01FE21BEC013)}, \textbf{Sanjana Adagimath (01FE21BEC363)}" . The project report has been approved as it satisfies the requirements with respect to the mini project work prescribed by the university curriculum for BE (V Semester) in School of Electronics and Communication Engineering of KLE  \linebreak Technological University for the academic year 2023-2024.}
   \end{center}
 
 \end{center}
@@ -133,7 +133,7 @@
 \newpage
 \begin{center}
   \begin{Large}
-    \textbf{ACKNOWLEDGMENT}
+    \textbf{ACKNOWLEDGEMENT}
   \end{Large}
 \end{center}
 We extend our gratitude to Dr. Ashok Shettar, Vice-Chancellor of KLE Technological University, Hubballi, and Dr. P. G. Tewari, Dean Academics of KLE Technological University, for providing us with the opportunity to conduct our research and for their unwavering support throughout the CIM Mini Project. Special thanks to Dr. Suneeta V.B., our head of school, for her leadership and support. We are also thankful to Prof. Rajeshwari K. for her invaluable help and guidance during our work. Additionally, we acknowledge the contributions of all teaching and non-teaching staff for their assistance and encouragement.
@@ -195,17 +195,36 @@ Improving the precision and efficiency of traffic light detection within Smart T
 Traffic Light Detection in Diverse Weather Conditions Using Machine Learning.
 \section{Organization of the report}
 \justify
-Initiating with an introduction in Chapter 1, the project systematically explores various facets of the project. Chapter 2 extensively examines the complexities of system design, providing an in-depth overview of its structure and components. Progressing further, Chapter 3 thoroughly covers the planning and execution aspects of the design, illuminating strategic decisions made during development. Chapter 4 shifts focus to presenting and analyzing results, with detailed discussions to clarify findings. Finally, Chapter 5 concludes the report with a summary, offering insights into project outcomes, and implications, and paving the way for future exploration and development in the identified scope. This structured approach ensures a cohesive and comprehensive narrative, guiding readers through the project's initiation, design, execution, results, and future prospects.
+
+\begin{itemize}
+  \item \textbf{Chapter 1: Introduction}
+        - Initiating with an introduction, the project provides an initial overview, setting the stage for the systematic exploration of various facets.
+
+  \item \textbf{Chapter 2: System Design}
+        - The project extensively examines the complexities of system design, offering an in-depth overview of its structure and components.
+
+  \item \textbf{Chapter 3: Planning and Execution}
+        - In this thoroughly covers the planning and execution aspects of the design, shedding light on strategic decisions made during the development phase.
+
+  \item \textbf{Chapter 4: Results Analysis}
+        - Progressing further shifts focus to presenting and analyzing results, featuring detailed discussions to clarify findings and highlight significant outcomes.
+
+  \item \textbf{Chapter 5: Conclusion}
+        - Finally concluding the report with a summary, providing insights into project outcomes, implications, and paving the way for future exploration and development in the identified scope.
+\end{itemize}
+
+
+
 
 \newpage
 \chapter{System design}
 \justify
-In this Chapter, We will analyze YOLOv8's cutting-edge advancements and intricate design principles as we look into the system's inner workings. The block diagram for our project will show how YOLOv8's cutting-edge features were incorporated and how well our solution integrated them.
+In this Chapter, We will analyze YOLOV8's cutting-edge advancements and intricate design principles as we look into the system's inner workings. The block diagram for our project will show how YOLOV8's cutting-edge features were incorporated and how well our solution integrated them.
 
 \section{Functional Block Diagram}
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.85\textwidth]{Fun-Diagram.png}
+  \includegraphics[width=1.08\textwidth]{Fun-Diagram.png}
   \caption{Shows Functional Block Diagram}
   \label{fig:function_block_diagram}
 \end{figure}
@@ -217,21 +236,21 @@ In this Chapter, We will analyze YOLOv8's cutting-edge advancements and intricat
 
     \item \textbf{Preprocessing:} Applies data normalization, and filtering (e.g., Gaussian blur) to mitigate noise and enhance relevant features. May involve color space conversion (e.g., RGB to HSV) for robust traffic light representation.
 
-    \item \textbf{Region of Interest (ROI) Detection:} Employs object detection algorithms (e.g., YOLOv8) to localize traffic light bounding boxes within the frame. Can incorporate anchor boxes of varying sizes and aspect ratios to handle diverse traffic light positions and appearances.
+    \item \textbf{Region of Interest (ROI) Detection:} Employs object detection algorithms (e.g., YOLOV8) to localize traffic light bounding boxes within the frame. Can incorporate anchor boxes of varying sizes and aspect ratios to handle diverse traffic light positions and appearances.
 
     \item \textbf{Traffic Light Classification:} Leverages deep convolutional neural networks (CNNs) trained on labeled datasets of traffic light images. CNN architecture likely features convolutional layers for feature extraction, followed by pooling layers for spatial down-sampling and fully-connected layers for classification into red, yellow, or green states.
   \end{itemize}
   \end{justify}
 }
 
-\section{Yolov8 Architectural Diagram}
+\section{YoloV8 Architectural Diagram}
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.65\textwidth]{Yolov8_Arch.png}%\href{https://blog.roboflow.com/whats-new-in-yolov8/}{[1]}
+  \includegraphics[width=0.9\textwidth]{Yolov8_Arch.png}%\href{https://blog.roboflow.com/whats-new-in-yolov8/}{[1]}
   \caption{Shows YoloV8 Architectural Diagram}
   \label{fig:function_block_diagram}
 \end{figure}
-\subsection{Yolov8 Architectural Diagram Explanation}
+\subsection{YoloV8 Architectural Diagram Explanation}
 {
   \begin{justify}
   \begin{itemize}
@@ -242,9 +261,9 @@ In this Chapter, We will analyze YOLOv8's cutting-edge advancements and intricat
 
     \item \textbf{Head:} This part of the model is responsible for making the final predictions. It consists of a series of convolutional layers that predict the bounding boxes, class probabilities, and confidence scores for the objects in the image.
 
-    \item \textbf{C2f module:} This is a recent development of the YOLOv8 architecture that raises the model's accuracy. It mixes characteristics from the neck and backbone to produce a more illuminating depiction of the picture.
+    \item \textbf{C2f module:} This is a recent development of the YOLOV8 architecture that raises the model's accuracy. It mixes characteristics from the neck and backbone to produce a more illuminating depiction of the picture.
 
-    \item \textbf{Decoupled head:} This is another new addition to the YOLOv8 architecture that helps to improve the speed of the model. It eliminates the need for a separate objectness branch, which can be computationally expensive.
+    \item \textbf{Decoupled head:} This is another new addition to the YOLOV8 architecture that helps to improve the speed of the model. It eliminates the need for a separate objectness branch, which can be computationally expensive.
   \end{itemize}
   \end{justify}
 }
@@ -276,7 +295,7 @@ In this Chapter, We will analyze YOLOv8's cutting-edge advancements and intricat
 \newpage
 \chapter{Implementation details}
 \justify
-In this chapter, We will dive into the technical intricacies of establishing a robust environment tailored for training a YOLOv8 model. This involves configuring essential dependencies, preparing the dataset meticulously, and executing the training and testing process for the model.
+In this chapter, We will dive into the technical intricacies of establishing a robust environment tailored for training a YOLOV8 model. This involves configuring essential dependencies, preparing the dataset meticulously, and executing the training and testing process for the model.
 \section{Environment Setup}
  {
   \begin{enumerate}
@@ -303,9 +322,8 @@ In this chapter, We will dive into the technical intricacies of establishing a r
     \item \textbf{Installing and updating the Ultralytics library:}
           \begin{center}
             \includegraphics[width=17cm, height=1cm]{ipi install ultalatics.png}
-          \end{center}
-
-
+          \end{center} 
+\newpage
     \item \textbf{Importing Ultralytics into the project:}
           \begin{center}
             \includegraphics[width=17cm, height=1cm]{import ultralatics.png}
@@ -331,7 +349,7 @@ In this chapter, We will dive into the technical intricacies of establishing a r
             \includegraphics[width=17cm, height=2.5cm]{Pip insall roboflow.png}
           \end{center}
           \subsection{Setting up YoloV8, Training YoloV8s model}
-    \item \textbf{Training the YOLOv8 model with specified parameters of 125 epochs with an image size of 1000 pixels and a batch size of 32:}
+    \item \textbf{Training the YOLOV8 model with specified parameters of 125 epochs with an image size of 1000 pixels and a batch size of 32:}
           \begin{center}
             \includegraphics[width=17cm, height=1.5cm]{Training Yolov8model.png}
           \end{center}
@@ -341,7 +359,7 @@ In this chapter, We will dive into the technical intricacies of establishing a r
           \end{center}
 
           \vspace{1.34cm}
-          \subsection{Visualizing the Results In Environment}
+          \subsection{Visualizing The Results In Environment}
     \item \textbf{Displaying confusion matrix using "Image" command imported from IPython.display:}
           \begin{center}
             \includegraphics[width=17cm, height=1cm]{displaying the confusion matrix in environment.png}
@@ -374,25 +392,25 @@ In this chapter, We will dive into the technical intricacies of establishing a r
 \chapter{Results}
 \justify
  {
-  In this chapter, we will delve into a comprehensive exploration of the results and project outcomes achieved through the implementation of YOLOv8. This entails an in-depth analysis of the results obtained.
+  In this chapter, we will delve into a comprehensive exploration of the results and project outcomes achieved through the implementation of YOLOV8. This entails an in-depth analysis of the results obtained.
  }
-\section{Result Visualizing}
+\section{Visualizing Results}
  {
   \begin{figure}[h]
     \centering
-    \includegraphics[width=0.65\textwidth]{Results Collgess.jpg}
-    \caption{Shows Results of YoloV8 implementation for our real-world sample images}
-    \label{fig:Results achieved from YoloV8s Implementation}
+    \includegraphics[width=0.7\textwidth]{Results-Collgess.jpg}
+    \caption{Shows results of YoloV8 implementation for our real-world sample images}
+    \label{fig:Results achieved from YoloV8s implementation}
   \end{figure}
   \justify
-  \hspace*{1cm} fig 4.2 shows a few sample results of our YoloV8 implementation on our own images other than the dataset images. The results are quite good, and they can be used in real-world applications.
+  \hspace*{1cm} fig 4.1 shows a few sample results of our YoloV8 implementation on our own images other than the dataset images. The results are quite good, and they can be used in real-world applications.
   \newpage
   \subsection{Result Analysis}
   {
     \begin{figure}[h]
       \centering
-      \includegraphics[width=0.7\textwidth]{confusion_matrix_normalized.png}
-      \caption{Shows Confusion Matrix Of YoloV8s Trained Model}
+      \includegraphics[width=0.8\textwidth]{confusion_matrix_normalized.png}
+      \caption{Shows confusion matrix of YoloV8s trained model}
       \label{fig:Confusion Matrix YoloV8 Trained Model}
     \end{figure}
     \justify
@@ -401,12 +419,12 @@ In this chapter, We will dive into the technical intricacies of establishing a r
     \begin{figure}[h]
       \centering
       \includegraphics[width=0.5\textwidth]{Comaprison Results.png}
-      \caption{Shows Result Comparison Of Epochs For Which The Model as trained}
+      \caption{Shows results comparison of epochs for which the model is trained}
       \label{fig: YoloV8 implementation}
     \end{figure}
 
     \begin{justify}
-    \hspace*{1cm} As shown in fig 4.3 the study showcased significant improvements in Mean Average Precision (MAP) scores across training epochs. Starting at a MAP score of 0.345 after 50 epochs, the detection accuracy steadily increased, reaching 0.962 at 125 epochs. This trajectory underscores the efficacy of our methodology in advancing traffic light detection accuracy, emphasizing the ongoing importance of evolving detection strategies for optimizing safety and traffic efficiency in the dynamic landscape of ITS(Intelligent Transportation Systems).
+    \hspace*{1cm} fig 4.3 shows that study showcased significant improvements in Mean Average Precision (MAP) scores across training epochs. Starting at a MAP score of 0.345 after 50 epochs, the detection accuracy steadily increased, reaching 0.962 at 125 epochs. This trajectory underscores the efficacy of our methodology in advancing traffic light detection accuracy, emphasizing the ongoing importance of evolving detection strategies for optimizing safety and traffic efficiency in the dynamic landscape of ITS(Intelligent Transportation Systems).
     \end{justify}
   }
  }
@@ -414,15 +432,16 @@ In this chapter, We will dive into the technical intricacies of establishing a r
 
 
 \newpage
-\chapter{Conclusions and future scope}
+\chapter{Conclusion and future scope}
 \section{Conclusion}
 \justify
  {
-  \hspace*{1cm} In conclusion, our comprehensive exploration and the achieved results underscore the potential of combining traditional and deep learning techniques for robust traffic light detection. This work contributes to the broader field of ITS by providing insights into enhancing the accuracy of detection systems, ultimately contributing to safer and more efficient transportation systems.
+  \hspace*{1cm} In conclusion, our thorough investigation and the corresponding results highlight the significant potential of combining conventional and deep learning techniques for robust traffic light detection. This research contributes valuable insights to the broader field of Intelligent Transportation Systems (ITS), aiming to enhance the accuracy of detection systems and ultimately contribute to the creation of safer and more efficient transportation systems. By examining both well-established and advanced learning methodologies, our study provides a nuanced understanding of their collaborative roles. This understanding is pivotal in optimizing the precision and reliability of traffic light detection. As we navigate the evolving landscape of transportation technology, the outcomes of this research illuminate pathways for further advancements, ensuring the continual improvement of safety measures and efficiency within the realm of Intelligent Transportation Systems.
  }
 
 \begin{flushleft}
 \end{flushleft}
+\newpage
 \section{Future scope}
 \begin{justify}
 \begin{enumerate}
