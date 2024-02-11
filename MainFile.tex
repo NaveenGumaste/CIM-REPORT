@@ -68,9 +68,9 @@
   \begin{large}
     \begin{enumerate}
       \item \textbf{Naveenkumar Gumaste}      \hspace{2.2cm}USN:01FE22BEC407
-      \item \textbf{Chandan C Raikar}         \hspace{3.39cm}USN:01FE21BEC038
-      \item \textbf{Divya R Salmani}          \hspace{3.85cm}USN:01FE21BEC013
-      \item \textbf{Sanjana Adagimath }       \hspace{3.05cm}USN:01FE21BEC363
+      \item \textbf{Chandan C Raikar}         \hspace{3.38cm}USN:01FE21BEC038
+      \item \textbf{Divya R Salmani}          \hspace{3.81cm}USN:01FE21BEC013
+      \item \textbf{Sanjana Adagimath }       \hspace{3.0cm}USN:01FE21BEC363
     \end{enumerate}
     \vspace{1cm}
   \end{large}
@@ -160,12 +160,13 @@ This project presents a current exploration into the critical realm of traffic l
 \newpage
 \chapter{Introduction}
 \justify
-In the Smart Transportation Systems (STS) domain, the efficiency of traffic light detection is integral to advancing road safety and optimizing traffic flow. The burgeoning growth of urban environments amplifies the demand for sophisticated systems capable of managing intricate traffic networks. This project responds to this imperative by concentrating on elevating the precision and efficiency of traffic light detection, specifically addressing challenges posed by urban mobility. The methodology employed involves a thorough examination of detection approaches, spanning from traditional computer vision to cutting-edge deep learning. This exhaustive analysis explores the strengths, limitations, and applications of Intelligent Transportation Systems (ITS). By leveraging datasets from ROBOFLOW UNIVERSE, the project ensures its relevance in real-world scenarios. Integrating traditional computer vision with deep learning not only contributes valuable insights but also positions the project to make meaningful contributions within the dynamic field of ITS.
+In the Intelligent Transportation Systems (ITS) domain, the efficiency of traffic light detection is integral to advancing road safety and optimizing traffic flow. The burgeoning growth of urban environments amplifies the demand for sophisticated systems capable of managing intricate traffic networks. This project responds to this imperative by concentrating on elevating the precision and efficiency of traffic light detection, specifically addressing challenges posed by urban mobility. The methodology employed involves a thorough examination of detection approaches, spanning from traditional computer vision to cutting-edge deep learning. This exhaustive analysis explores the strengths, limitations, and applications of Intelligent Transportation Systems (ITS). By leveraging datasets from ROBOFLOW UNIVERSE, the project ensures its relevance in real-world scenarios. Integrating traditional computer vision with deep learning not only contributes valuable insights but also positions the project to make meaningful contributions within the dynamic field of ITS.
 \flushleft
 \section{Motivation}
 \justify
-Improving the precision and efficiency of traffic light detection within Smart Transportation Systems (STS) is pivotal for enhancing road safety in increasingly complex urban environments. As urban areas expand, the demand for advanced systems to manage intricate traffic networks grows, compelling this project to focus on optimizing traffic flow through enhanced traffic light detection. The motivation stems from addressing urban mobility challenges, prompting a thorough review of detection approaches, and leveraging datasets from ROBOFLOW UNIVERSE to develop solutions relevant to real-world scenarios. Integrating traditional computer vision with cutting-edge deep learning technologies adds a novel dimension, offering valuable insights and advancing traffic light detection methodologies within the dynamic realm of Intelligent Transportation Systems (ITS). In essence, this project is driven by the overarching goals of fostering road safety, optimizing traffic flow, addressing urban mobility challenges, and integrating innovative technologies to contribute meaningfully to the evolution of ITS.
+Improving the precision and efficiency of traffic light detection within Intelligent Transportation Systems (ITS) is pivotal for enhancing road safety in increasingly complex urban environments. As urban areas expand, the demand for advanced systems to manage intricate traffic networks grows, compelling this project to focus on optimizing traffic flow through enhanced traffic light detection. The motivation stems from addressing urban mobility challenges, prompting a thorough review of detection approaches, and leveraging datasets from Roboflow Universe to develop solutions relevant to real-world scenarios. Integrating traditional computer vision with cutting-edge deep learning technologies adds a novel dimension, offering valuable insights and advancing traffic light detection methodologies within the dynamic realm of Intelligent Transportation Systems (ITS). In essence, this project is driven by the overarching goals of fostering road safety, optimizing traffic flow, addressing urban mobility challenges, and integrating innovative technologies to contribute meaningfully to the evolution of ITS.
 \flushleft
+
 \section{Objectives}
 \begin{justify}
 \begin{itemize}
@@ -232,7 +233,7 @@ In this Chapter, We will analyze YOLOV8's cutting-edge advancements and intricat
 {
   \begin{justify}
   \begin{itemize}
-    \item \textbf{Input:} Video frames or still images, maybe in different resolutions and formats (such as RGB or grayscale), are received.
+    \item \textbf{Input:} Video frames or still images, maybe in different resolutions and formats (such as RGB or GRAYSCALE), are received.
 
     \item \textbf{Preprocessing:} Applies data normalization, and filtering (e.g., Gaussian blur) to mitigate noise and enhance relevant features. May involve color space conversion (e.g., RGB to HSV) for robust traffic light representation.
 
@@ -246,51 +247,46 @@ In this Chapter, We will analyze YOLOV8's cutting-edge advancements and intricat
 \section{YoloV8 Architectural Diagram}
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.9\textwidth]{Yolov8_Arch.png}%\href{https://blog.roboflow.com/whats-new-in-yolov8/}{[1]}
+  \includegraphics[width=0.9\textwidth]{Yolov8_Arch.png}
   \caption{Shows YoloV8 Architectural Diagram}
   \label{fig:function_block_diagram}
 \end{figure}
 \subsection{YoloV8 Architectural Diagram Explanation}
 {
   \begin{justify}
-  \begin{itemize}
-    \item \textbf{Backbone:} The model's component that pulls features from the input image is this one. It is composed of several convolutional layers that increase the number of channels and gradually shrink the image's size. The backbone's architecture might differ based on the model version, however it usually uses a ResNet or CSPDarknet design.
+    \item \textbf{Backbone:}
+    \begin{itemize}
+        \item The backbone of YOLOv8 plays a pivotal role in feature extraction from input images.
+        \item Comprising multiple convolutional layers, it systematically increases channel numbers, enhancing the model's ability to capture intricate patterns.
+        \item The backbone's architecture, whether adopting ResNet or CSPDarknet, may vary based on the specific model version.
+    \end{itemize}
 
+\item \textbf{Neck:}
+    \begin{itemize}
+        \item Following the backbone, the neck processes the extracted features, preparing them for the subsequent detection head.
+        \item Incorporating a spatial pyramid pooling (SPP) layer, the neck aggregates features from diverse spatial scales, contributing to a comprehensive understanding of the image.
+        \item Additional convolutional layers further refine and shape the features for effective object detection.
+    \end{itemize}
 
-    \item \textbf{Neck:} This part of the model processes the features extracted by the backbone to prepare them for the detection head. It typically consists of a spatial pyramid pooling (SPP) layer, which aggregates features from different spatial scales, and a few convolutional layers.
+\item \textbf{Head:}
+    \begin{itemize}
+        \item The head of the YOLOV8 model is responsible for making the final predictions based on the processed features.
+        \item Comprising a series of convolutional layers, it predicts crucial information such as bounding boxes, class probabilities, and confidence scores for identified objects.
+    \end{itemize}
 
-    \item \textbf{Head:} This part of the model is responsible for making the final predictions. It consists of a series of convolutional layers that predict the bounding boxes, class probabilities, and confidence scores for the objects in the image.
+\item \textbf{C2f module:}
+    \begin{itemize}
+        \item A recent advancement in YOLOV8, the C2f module enhances the model's accuracy by merging characteristics from both the neck and backbone.
+        \item This integration provides a more nuanced and illuminating depiction of the image, contributing to improved object recognition and localization.
+    \end{itemize}
 
-    \item \textbf{C2f module:} This is a recent development of the YOLOV8 architecture that raises the model's accuracy. It mixes characteristics from the neck and backbone to produce a more illuminating depiction of the picture.
-
-    \item \textbf{Decoupled head:} This is another new addition to the YOLOV8 architecture that helps to improve the speed of the model. It eliminates the need for a separate objectness branch, which can be computationally expensive.
-  \end{itemize}
+\item \textbf{Decoupled head:}
+    \begin{itemize}
+        \item Another noteworthy addition to the YOLOV8 architecture is the decoupled head, designed to optimize model speed without compromising performance.
+        \item By eliminating the need for a separate objectness branch, which can be computationally expensive, the decoupled head contributes to overall model efficiency.
+    \end{itemize}
   \end{justify}
 }
-%\section{Morphological chart}
-%Additional information on how to write tables is as shown in \ref{tab:1}
-
-%\begin{table} [h]
-%\begin{center}
-%\caption{Morphological chart}
-%\label{tab:1}
-%\begin{tabular}{|c|c|c|c|} \hline
-%
-%\textbf{Functions/Means} & \textbf{Option 1} & \textbf{Option 2} & \textbf{Option 3} \\ \hline
-%1 & 2 & \multicolumn{2}{|c|}{Column merge} \\ \hline
-%Row merge & 5 & 6 & 7 \\ \cline{2-4}
-% & 8 & 9 & 10 \\ \hline
-%\end{tabular}
-%
-%\end{center}
-%\end{table} 
-
-%\section{Design alternatives}
-
-
-%\newpage
-%\section{Final design}
-%We select one of the optimal solutions based on its working and ease of implementation.\\
 
 \newpage
 \chapter{Implementation details}
@@ -341,7 +337,7 @@ In this chapter, We will dive into the technical intricacies of establishing a r
   \end{enumerate}
  }
 
-\section{Setting up YoloV8, Dataset, Training YoloV8s model and getting the results}
+\section{Setting Up YoloV8, Dataset, Training YoloV8s Model And Getting The Results}
  {
   \begin{enumerate}
     \item \textbf{Installing the Roboflow library with the dataset using its unique api-key:}
@@ -359,7 +355,7 @@ In this chapter, We will dive into the technical intricacies of establishing a r
           \end{center}
 
           \vspace{1.34cm}
-          \subsection{Visualizing The Results In Environment}
+          \subsection{Visualizing Results In The Environment}
     \item \textbf{Displaying confusion matrix using "Image" command imported from IPython.display:}
           \begin{center}
             \includegraphics[width=17cm, height=1cm]{displaying the confusion matrix in environment.png}
@@ -383,11 +379,7 @@ In this chapter, We will dive into the technical intricacies of establishing a r
   \end{enumerate}
  }
 
-%\newpage
-%\chapter{Optimization}
-%\section{Introduction to optimization}
-%\section{Types of Optimization}
-%\section{Selection and justification of optimization method}
+
 \newpage
 \chapter{Results}
 \justify
@@ -414,7 +406,7 @@ In this chapter, We will dive into the technical intricacies of establishing a r
       \label{fig:Confusion Matrix YoloV8 Trained Model}
     \end{figure}
     \justify
-    \hspace*{1cm} fig 4.3 shows the confusion matrix of our YoloV8 trained model which is trained on our own custom dataset. The confusion matrix shows the accuracy of our model, which averages at 96 percent most of the time.
+    \hspace*{1cm} fig 4.3 shows the confusion matrix of our YoloV8 trained model which is trained on our own custom dataset. The confusion matrix shows the accuracy of our model, which averages at 96\%.
 
     \begin{figure}[h]
       \centering
@@ -442,7 +434,7 @@ In this chapter, We will dive into the technical intricacies of establishing a r
 \begin{flushleft}
 \end{flushleft}
 \newpage
-\section{Future scope}
+\section{Future Scope}
 \begin{justify}
 \begin{enumerate}
     \item \textbf{Enhanced Dataset Diversity:}
